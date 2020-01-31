@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -20,11 +21,9 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(
-      to right bottom,
+  background-image: linear-gradient(to right bottom,
       rgba(0, 0, 0, 0.5),
-      rgba(255, 255, 255, 0.2)
-    ),
+      rgba(255, 255, 255, 0.2)),
     url(../img/rv-bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,7 +54,6 @@ body {
 .heading-primary {
   color: #ffffff;
   text-transform: uppercase;
-
   backface-visibility: hidden;
 }
 
