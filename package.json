@@ -4,7 +4,7 @@
   "description": "Red Velvet Prototype Website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/styles.css"
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
   "repository": {
     "type": "git",
