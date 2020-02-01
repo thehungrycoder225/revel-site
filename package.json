@@ -1,0 +1,22 @@
+{
+  "name": "revelup",
+  "version": "1.0.0",
+  "description": "Red Velvet Prototype Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryx25/revel-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cryx25/revel-site/issues"
+  },
+  "homepage": "https://github.com/cryx25/revel-site#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
