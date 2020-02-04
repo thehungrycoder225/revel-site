@@ -64,7 +64,7 @@ body {
     animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
-  background: linear-gradient(to right, #2aaa7d, #7fcd91);
+  background: linear-gradient(to right, #182526, #8b8c5a);
   color: transparent;
   letter-spacing: 2px;
   display: inline-block;
@@ -78,7 +78,7 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba(91, 86, 86, 0.2); }
 
 .heading-tri {
-  color: #a6866a;
+  color: #043e42;
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase; }
@@ -157,8 +157,8 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-link:link, .btn-link:visited {
-  color: #2aaa7d;
-  border-bottom: 0.1rem solid #2aaa7d;
+  color: #182526;
+  border-bottom: 0.1rem solid #182526;
   display: inline-block;
   text-decoration: none;
   font-size: 1.8rem;
@@ -166,7 +166,7 @@ body {
   transition: all 0.2s ease-in; }
 
 .btn-link:hover {
-  background: #2aaa7d;
+  background: #182526;
   color: #f5eaea;
   box-shadow: 0 1rem 2rem rgba(91, 86, 86, 0.2);
   transform: translateY(-0.2rem); }
@@ -175,34 +175,47 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(91, 86, 86, 0.2);
   transform: translateY(0); }
 
-.rv-composition__img {
-  box-shadow: 0 1.5rem 4rem rgba(91, 86, 86, 0.5);
-  position: relative;
-  border-radius: 0.2rem;
-  width: 55%; }
-  .rv-composition__img-p1 {
-    top: -2rem;
-    left: 0; }
-  .rv-composition__img-p2 {
-    top: -20rem;
-    left: 20rem; }
-  .rv-composition__img-p3 {
-    top: -30rem;
-    left: 10rem; }
-  .rv-composition__img-p1:hover {
-    top: -2rem;
-    left: 0;
-    z-index: 1; }
-  .rv-composition__img-p2:hover {
-    top: -20rem;
-    left: 20rem;
-    z-index: 1; }
-  .rv-composition__img-p3:hover {
-    top: -30rem;
-    left: 10rem; }
+.rv-composition {
+  position: relative; }
+  .rv-composition__img {
+    box-shadow: 0 1.5rem 4rem rgba(91, 86, 86, 0.5);
+    position: absolute;
+    border-radius: 0.2rem;
+    width: 55%;
+    transition: all 0.5s; }
+    .rv-composition__img-p1 {
+      top: 0rem;
+      left: 3rem; }
+    .rv-composition__img-p2 {
+      top: 4rem;
+      right: 0; }
+    .rv-composition__img-p3 {
+      top: 10rem;
+      left: 20%; }
+    .rv-composition__img:hover {
+      box-shadow: 0 2.5rem 4rem rgba(91, 86, 86, 0.7);
+      outline: 1.5rem solid #8b8c5a;
+      outline-offset: 1.5rem;
+      transform: scale(1.05);
+      z-index: 1; }
+  .rv-composition:hover .rv-composition__img:not(:hover) {
+    transform: scale(0.95) translateY(1rem); }
+
+.member-box {
+  background: rgba(245, 234, 234, 0.8);
+  font-size: 1.4rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 1rem 2.5rem rgba(91, 86, 86, 0.8); }
+  .member-box__icon {
+    background: linear-gradient(to right, rgba(4, 62, 66, 0.9), rgba(242, 167, 167, 0.9));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 6rem; }
 
 .header {
-  background-image: linear-gradient(to left bottom, rgba(42, 170, 125, 0.2), rgba(91, 86, 86, 0.5)), url(../img/rv-bg2.jpg);
+  background-image: linear-gradient(to left bottom, rgba(24, 37, 38, 0.2), rgba(91, 86, 86, 0.5)), url(../img/rv-bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -253,3 +266,8 @@ body {
   padding: 20rem 0;
   margin-top: -25vh;
   color: #5b5656; }
+
+.section-members {
+  padding: 20rem 0;
+  background: linear-gradient(to right bottom, rgba(242, 167, 167, 0.5), rgba(140, 58, 58, 0.5)), url(../../img/rv-2.jpg);
+  background-size: cover; }

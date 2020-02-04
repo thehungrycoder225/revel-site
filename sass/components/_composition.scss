@@ -1,36 +1,33 @@
 .rv-composition {
+  position: relative;
   &__img {
     box-shadow: 0 1.5rem 4rem rgba($color-dark, $alpha: 0.5);
-    position: relative;
+    position: absolute;
     border-radius: 0.2rem;
     width: 55%;
+    transition: all 0.5s;
 
     &-p1 {
-      top: -2rem;
-      left: 0;
+      top: 0rem;
+      left: 3rem;
     }
     &-p2 {
-      top: -20rem;
-      left: 20rem;
+      top: 4rem;
+      right: 0;
     }
     &-p3 {
-      top: -30rem;
-      left: 10rem;
+      top: 10rem;
+      left: 20%;
     }
-
-    &-p1:hover {
-      top: -2rem;
-      left: 0;
+    &:hover {
+      box-shadow: 0 2.5rem 4rem rgba($color-dark, $alpha: 0.7);
+      outline: 1.5rem solid $color-primary-light;
+      outline-offset: 1.5rem;
+      transform: scale(1.05);
       z-index: 1;
     }
-    &-p2:hover {
-      top: -20rem;
-      left: 20rem;
-      z-index: 1;
-    }
-    &-p3:hover {
-      top: -30rem;
-      left: 10rem;
-    }
+  }
+  &:hover &__img:not(:hover) {
+    transform: scale(0.95) translateY(1rem);
   }
 }
