@@ -1,0 +1,36 @@
+.rv-composition {
+  &__img {
+    box-shadow: 0 1.5rem 4rem rgba($color-dark, $alpha: 0.5);
+    position: relative;
+    border-radius: 0.2rem;
+    width: 55%;
+
+    &-p1 {
+      top: -2rem;
+      left: 0;
+    }
+    &-p2 {
+      top: -20rem;
+      left: 20rem;
+    }
+    &-p3 {
+      top: -30rem;
+      left: 10rem;
+    }
+
+    &-p1:hover {
+      top: -2rem;
+      left: 0;
+      z-index: 1;
+    }
+    &-p2:hover {
+      top: -20rem;
+      left: 20rem;
+      z-index: 1;
+    }
+    &-p3:hover {
+      top: -30rem;
+      left: 10rem;
+    }
+  }
+}
